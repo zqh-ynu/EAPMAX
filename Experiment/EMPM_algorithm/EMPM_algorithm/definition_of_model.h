@@ -27,10 +27,10 @@ class User {
 protected:
 	int a;	// the number of independent tasks known as a bag-of-tasks
 	int index;		// the index of user
-	double profit = 0;	// the profit of current user
+	double profit = 10000;	// the profit of current user
 
 public:
-	User() { a = 0; index = 0; profit = 0; }
+	User() { a = 0; index = 0; }
 	User(int a_, int index_, double profit_) { a = a_; index = index_; profit = profit_; }
 	void set_a(int a_) { a = a_; }
 	void set_index(int index_) { index = index_; }
@@ -70,7 +70,7 @@ protected:
 	double MS;						// the maximum finishing time of all machines (i.e., makespan)
 	double E;						// the energy consumed by n users
 	double c = 1;						// the cost per unit of energy
-
+	double gamma = 1;
 	// sort the tasks of user i in descending order by APC_ij*ETC_ij, without loss of generality, assume that APC_i1*ETC_i1 ¡Ý APC_i2*ETC_i2 ¡Ý...¡Ý APC_im*ETC_im, n¡Ám
 	vector<vector<int>> relabelled_index;
 
@@ -91,6 +91,8 @@ public:
 	EAPMAX(string file_path);		// constructor of class EAPMAX, initializing related variables by the data from the file named "file_path"
 	void init_relabelled_index();
 	void caculate_ETCAPC();			// caculate the value of ETCAPC[i][j] = APC[i][j] * ETC[i][j];
+	void set_profit();
+	void set_gamma(double g) { gamma = g; }
 
 	// sort the tasks of user i in descending order by APC_ij*ETC_ij, without loss of generality, assume that APC_i1*ETC_i1 ¡Ý APC_i2*ETC_i2 ¡Ý...¡Ý APC_im*ETC_im
 	void relabel_index(int i);

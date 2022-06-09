@@ -133,6 +133,8 @@ EAPMAX::EAPMAX(string file_path) {
 		users[i].set_a(a);
 	}
 	fUnum.close();
+
+	
 	///////////////////////////////////////
 	init_relabelled_index();
 	caculate_ETCAPC();
@@ -150,6 +152,16 @@ void EAPMAX::caculate_ETCAPC()
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < m; j++)
 			ETCAPC[i][j] = ETC[i][j] * APC[i][j];
+}
+
+void EAPMAX::set_profit()
+{
+	for (int i = 0; i < n; i++)
+	{
+		double E_min = ETCAPC[i][m - 1];
+		double p = E_min * gamma;
+		users[i].set_profit(p);
+	}
 }
 
 void EAPMAX::quickSort(vector<double>& a, int left, int right)
@@ -284,8 +296,12 @@ int EAPMAX::inversion_test() {
 
 void EAPMAX::Online_algorithm_for_EAPMAX()
 {
+
+	for (int i = 0; i < n; i++)
+		relabel_index(i);
+	set_profit();
 	//
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 10; i++)
 	{
 		int ii = i + 1;					// the first index of L_i, E_i, MS_i
 		boost::numeric::ublas::matrix<double> best_X;		// best selution x_ij such that objective value is maximized
@@ -305,7 +321,9 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 			solve_linear_equations(i, tao, X);
 			// Comparing these M solution to find the best solution x_ij such that profit is the maximal
 			double value = caculate_objective_value(X, i);
+			
 			std::cout << "\nvalue = " << value << ",\tbest_value = " << best_value;
+
 			if (value > best_value)
 			{
 				best_value = value;
@@ -319,10 +337,7 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 		}
 		std::cout << "best_X: " << best_X <<'\n';
 		std::cout << "best_X(0, 0): " << best_X(0, 0) <<'\n';
-		if (best_X(0, 0) < MS_i[ii - 1])
-			MS_i[ii] = MS_i[ii - 1];
-		else
-			MS_i[ii] = best_X(0, 0);
+		
 		for (int jj = 1; jj < m + 1; jj++)
 		{
 			x[i][jj - 1] = best_X(jj, 0);
@@ -356,7 +371,9 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 			L_i[ii][j] += (L_i[ii - 1][j] + x[i][j] * ETC[i][j]);
 		}
 		E_i[ii] += (E_i[ii - 1] + xAPCETC);
-
+		for (int j = 0; j < m; j++)
+			if (L_i[ii][j] > MS_i[ii])
+				MS_i[ii] = L_i[ii][j];
 		print_status(i);
 	}
 }
@@ -432,13 +449,28 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	}
 	//print X
 	std::cout << "X_:\n" << X_ << '\n';
+
+	std::cout << "x*ETC:\n";
+	for (int J = 1; J < m + 1; J++)
+		std::cout << X_(J, 0) * ETC[i][J - 1] << '\t';
+	std::cout << '\n';
+
+	std::cout << "x*ETC + L_[i-1]:\n";
+	for (int J = 1; J < m + 1; J++)
+		std::cout << X_(J, 0) * ETC[i][J - 1] + L_i[ii - 1][J - 1 ] << '\t';
+	std::cout << '\n';
 }
 
 double EAPMAX::caculate_objective_value(boost::numeric::ublas::matrix<double>& X, int i)
 {
 	// X ÊÇÔ­ÐòË÷Òý
 	int ii = i + 1;
-	double p = users[i].get_profit();
+	double p = 0;
+	for (int I = 0; I < i + 1; I++)
+	{
+		p += users[I].get_a() * users[I].get_profit();
+		// p += users[I].get_profit();
+	}
 	double xAPCETC = 0;
 	for (int j = 0; j < m; j++)
 	{
@@ -468,7 +500,7 @@ void EAPMAX::print_input_data()
 	print_a();
 	print_ETC_all();
 	print_APC();
-	
+	std::cout << "profit = " << users[0].get_profit() << '\n';
 }
 
 void EAPMAX::print_ETC_all()

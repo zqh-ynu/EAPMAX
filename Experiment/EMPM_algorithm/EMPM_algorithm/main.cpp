@@ -18,6 +18,7 @@ void main() {
 		
 		test.solve_linear_equations(0, j, X);
 	}*/
+	test.set_gamma(1.5);
 	test.Online_algorithm_for_EAPMAX();
 
 	
