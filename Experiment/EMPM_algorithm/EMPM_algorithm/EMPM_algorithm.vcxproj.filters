@@ -32,6 +32,9 @@
     <ClInclude Include="matrix_inverse.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\data\profit1\.DS_Store">
@@ -54,5 +57,10 @@
     <Text Include="..\data\profit1\README.txt">
       <Filter>资源文件</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EMPM_algorithm.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

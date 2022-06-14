@@ -26,61 +26,36 @@ EAPMAX::EAPMAX(int m_, int n_) {
 
 }
 
-EAPMAX::EAPMAX(string file_path) {
-	m = 9;
-	n = 30;
-	current_user = 0;
-	MS = 0;
-	E = 0;
-	c = 1;
+EAPMAX::EAPMAX(string origin_file_path) {
+	init_machine_and_task_type(origin_file_path);
+	///////////////////////////////////////
+	init_relabelled_index();
+}
+
+void EAPMAX::init_machine_and_task_type(string origin_file_path)
+{
 	machines.resize(m);
-	users.resize(n);
+	ETC.resize(type_n);
+	APC.resize(type_n);
+	relabelled_index.resize(type_n);
+	ETCAPC.resize(type_n);
 
-	ETC.resize(n);
-	APC.resize(n);
-	x.resize(n);
-	L.resize(m);
-
-	relabelled_index.resize(n);
-	ETCAPC.resize(n);
-	L_i.resize(n + 1);
-	E_i.resize(n + 1);
-	MS_i.resize(n);
-	Objective_value.resize(n);
-
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < type_n; i++)
 	{
 		ETC[i].resize(m);
 		APC[i].resize(m);
-		x[i].resize(m);
 		relabelled_index[i].resize(m);
 		ETCAPC[i].resize(m);
-		L_i[i].resize(m);
-		Objective_value[i].resize(m);
 	}
-	L_i[n].resize(m);
 
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < type_n; i++)
 	{
-		users[i].set_index(i);
-		E_i[i] = 0;
-		MS_i[i] = 0;
 		for (int j = 0; j < m; j++)
 		{
 			ETC[i][j] = 0;
 			APC[i][j] = 0;
-			x[i][j] = 0;
 			ETCAPC[i][j] = 0;
-			L_i[i][j] = 0;
-			Objective_value[i][j] = 0;
 		}
-	}
-	E_i[n] = 0;
-	for (int j = 0; j < m; j++)
-	{
-		L_i[n][j] = 0;
-		machines[j].set_index(j);
-		L[j] = 0;
 	}
 	/// <summary>
 	/// /////////////////////////
@@ -89,14 +64,12 @@ EAPMAX::EAPMAX(string file_path) {
 	string data;
 	string ETC_file = "ETC.csv";
 	string APC_file = "APC.csv";
-	string User_Num_file = "TPT.csv";
 	char douhao;		// 在读取csv时，数字用逗号分隔，用该变量存储这个逗号
 	std::ifstream fETC;
-
-	fETC.open(file_path + ETC_file);
+	fETC.open(origin_file_path + ETC_file);
 	std::cout << ETC.size() << '\n';
 	// 读取ETC 30行9列
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < type_n; i++)
 	{
 		getline(fETC, data);
 		istringstream istr(data);
@@ -109,8 +82,8 @@ EAPMAX::EAPMAX(string file_path) {
 	fETC.close();
 
 	std::ifstream fAPC;
-	fAPC.open(file_path + APC_file);
-	for (int i = 0; i < n; i++)
+	fAPC.open(origin_file_path + APC_file);
+	for (int i = 0; i < type_n; i++)
 	{
 		getline(fAPC, data);
 		istringstream istr(data);
@@ -121,35 +94,80 @@ EAPMAX::EAPMAX(string file_path) {
 		}
 	}
 	fAPC.close();
-	
-	std::ifstream fUnum;
-	fUnum.open(file_path + User_Num_file);
+
+	///////////////////////////////////////
+	caculate_ETCAPC();
+}
+
+void EAPMAX::init_users_massage(string file)
+{
+	string data;
+	char douhao;		// 在读取csv时，数字用逗号分隔，用该变量存储这个逗号
+	std::ifstream fUsers;
+	fUsers.open(file);
+	// 读取实例第一行，用户数n
+	getline(fUsers, data);
+	istringstream istr(data);
+	istr >> n;
+
+	users.resize(n);
+	x.resize(n);
+	L_i.resize(n + 1);
+	E_i.resize(n + 1);
+	MS_i.resize(n);
+	Objective_value.resize(n);
+
+	int a;
+	int t;
 	for (int i = 0; i < n; i++)
 	{
-		getline(fUnum, data);
+		getline(fUsers, data);
 		istringstream istr(data);
-		int a;
-		istr >> a;
+		std::cout << data << '\n';
+		
+		istr >> t >> a;
+		users[i].set_type(t);
 		users[i].set_a(a);
+		users[i].set_index(i);
+
+		x[i].resize(m);
+		L_i[i].resize(m);
+		Objective_value[i].resize(m);
 	}
-	fUnum.close();
+	fUsers.close();
+
+	L_i[n].resize(m);
 
 	
-	///////////////////////////////////////
-	init_relabelled_index();
-	caculate_ETCAPC();
+
+	for (int i = 0; i < n; i++)
+	{
+		E_i[i] = 0;
+		MS_i[i] = 0;
+		for (int j = 0; j < m; j++)
+		{
+			x[i][j] = 0;
+			L_i[i][j] = 0;
+			Objective_value[i][j] = 0;
+		}
+	}
+	E_i[n] = 0;
+	for (int j = 0; j < m; j++)
+	{
+		L_i[n][j] = 0;
+	}
 }
 
 void EAPMAX::init_relabelled_index()
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < type_n; i++)
 		for (int j = 0; j < m; j++)
 			relabelled_index[i][j] = j;
 }
 
 void EAPMAX::caculate_ETCAPC()
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < type_n; i++)
 		for (int j = 0; j < m; j++)
 			ETCAPC[i][j] = ETC[i][j] * APC[i][j];
 }
@@ -158,7 +176,8 @@ void EAPMAX::set_profit()
 {
 	for (int i = 0; i < n; i++)
 	{
-		double E_min = ETCAPC[i][m - 1];
+		int t = users[i].get_type();
+		double E_min = ETCAPC[t][m - 1];
 		double p = E_min * gamma;
 		users[i].set_profit(p);
 	}
@@ -254,9 +273,8 @@ void EAPMAX::test_quickSort() {
 	cout << '\n';
 }
 
-void EAPMAX::relabel_index(int i) {
-	current_user = i;
-	quickSort(ETCAPC[i], 0, m - 1);
+void EAPMAX::relabel_index(int t) {
+	quickSort(ETCAPC[t], 0, m - 1);
 }
 
 
@@ -296,24 +314,24 @@ int EAPMAX::inversion_test() {
 
 void EAPMAX::Online_algorithm_for_EAPMAX()
 {
-
-	for (int i = 0; i < n; i++)
-		relabel_index(i);
+	// ralabel the indices of tasks such that APC_i1*ETC_i1 ≥ APC_i2*ETC_i2 ≥...≥ APC_im*ETC_im
+	for (int t = 0; t < type_n; t++)
+		relabel_index(t);
 	set_profit();
 	//
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < n; i++)		// i < n
 	{
+		int t = users[i].get_type();
 		int ii = i + 1;					// the first index of L_i, E_i, MS_i
 		boost::numeric::ublas::matrix<double> best_X;		// best selution x_ij such that objective value is maximized
 		double best_value = - DBL_MAX;
 		int best_tao = 0;
-		// ralabel the indices of tasks such that APC_i1*ETC_i1 ≥ APC_i2*ETC_i2 ≥...≥ APC_im*ETC_im
-		relabel_index(i);
+		
 
 		////////////////////
 		std::cout << "\n\n++++++++++++++++++++++++++++++++++++++ user" << i << " ++++++++++++++++++++++++++++++++++++++\n";
-		print_ETCAPC_row(i);
-		print_relabelled_index_row(i);
+		//* print_ETCAPC_row(i);
+		//* print_relabelled_index_row(i);
 
 		for (int tao = 0; tao < m; tao++) {
 			// solve equations(15) to find a solution x_ij^tao
@@ -322,7 +340,7 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 			// Comparing these M solution to find the best solution x_ij such that profit is the maximal
 			double value = caculate_objective_value(X, i);
 			
-			std::cout << "\nvalue = " << value << ",\tbest_value = " << best_value;
+			std::cout << "\nvalue = " << value << ",\tbest_value = " << best_value << '\n';
 
 			if (value > best_value)
 			{
@@ -332,8 +350,8 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 			}
 
 			//// 输出猜测tao时的结果
-			std::cout << "\ni = " << i << ",\ttao = " << tao << ",\ta = " << users[i].get_a() << ",\tMS_i = " << X(0, 0) << ",\tvalue = " << value << "\n";
-			std::cout << X << "\n";
+			//* std::cout << "\ni = " << i << ",\ttao = " << tao << ",\ta = " << users[i].get_a() << ",\tMS_i = " << X(0, 0) << ",\tvalue = " << value << "\n";
+			//* std::cout << X << "\n";
 		}
 		std::cout << "best_X: " << best_X <<'\n';
 		std::cout << "best_X(0, 0): " << best_X(0, 0) <<'\n';
@@ -353,7 +371,7 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 		double xAPCETC = 0;			// the summary energy of assining tasks of user i
 		for (int j = m - 1; j >= 0; j--)
 		{
-			int o = relabelled_index[i][j];
+			int o = relabelled_index[t][j];
 			// assign ^x_ij^ taks of type i to machines of type j, until all tasks are assigned;
 			if (sum_x + x[i][o] < users[i].get_a())
 			{
@@ -365,17 +383,18 @@ void EAPMAX::Online_algorithm_for_EAPMAX()
 				x[i][o] = users[i].get_a() - sum_x;
 				sum_x += x[i][o];
 			}
-			xAPCETC += x[i][o] * ETCAPC[i][j];
+			xAPCETC += x[i][o] * ETCAPC[t][j];
 			// update the average load of type j; L_i[j]
 
-			L_i[ii][j] += (L_i[ii - 1][j] + x[i][j] * ETC[i][j]);
+			L_i[ii][j] += (L_i[ii - 1][j] + x[i][j] * ETC[t][j]);
 		}
 		E_i[ii] += (E_i[ii - 1] + xAPCETC);
 		for (int j = 0; j < m; j++)
 			if (L_i[ii][j] > MS_i[ii])
 				MS_i[ii] = L_i[ii][j];
-		print_status(i);
+		
 	}
+	print_status(n - 1);
 }
 
 void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matrix<double>& X_)
@@ -383,6 +402,7 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	// user i arrived and guess tao
 	// i = 0 ~ (n - 1);		tao = 0 ~ (m - 1)
 	// A × X = L   →   X = A^(-1) × L
+	int t = users[i].get_type();
 	int dim = m - tao + 1;										// the dimension of matrix
 	int ii = i + 1;												// the index of user in L_i, E_i and MS_i
 	boost::numeric::ublas::matrix<double> A(dim, dim, 0);			// the coefficient matrix of linear equations
@@ -394,7 +414,7 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	// init A
 	//////////////////////////
 	std::cout << "-----\n";
-	print_ETC_row(i);
+	//* print_ETC_row(i);
 	// init 1st row
 	A(0, 0) = 0;
 	for (int J = 1; J < dim; J++)
@@ -402,14 +422,14 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	for (int I = 1; I < dim; I++)
 	{
 		// I = 1 ~ (m - tao)
-		int o = relabelled_index[i][tao + I - 1];	// 原序号
+		int o = relabelled_index[t][tao + I - 1];	// 原序号
 		A(I, 0) = 1;
-		A(I, I) = - ETC[i][o];
+		A(I, I) = - ETC[t][o];
 	}
 	// print A
-	std::cout << "A:\n";
-	for (int I = 0; I < dim; I++)
-		std::cout << row(A, I) << '\n';
+	//* std::cout << "A:\n";
+	//* for (int I = 0; I < dim; I++)
+	//* 	std::cout << row(A, I) << '\n';
 
 
 	//////////////////////////
@@ -418,11 +438,11 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	L(0, 0) = users[i].get_a();
 	for (int J = 1; J < dim; J++)
 	{
-		int o = relabelled_index[i][tao + J - 1];
+		int o = relabelled_index[t][tao + J - 1];
 		L(J, 0) = L_i[ii - 1][o];
 	}
 	//print L
-	std::cout << "L:\n" << L << '\n';
+	//* std::cout << "L:\n" << L << '\n';
 
 
 	//////////////////////////
@@ -430,9 +450,9 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	//////////////////////////
 	InvertMatrix(A, A_inverse);
 	// print A_inverse
-	std::cout << "A_inverse:\n";
-	for (int I = 0; I < dim; I++)
-		std::cout << row(A_inverse, I) << '\n';
+	//* std::cout << "A_inverse:\n";
+	//* for (int I = 0; I < dim; I++)
+	//* 	std::cout << row(A_inverse, I) << '\n';
 
 
 	//////////////////////////
@@ -440,30 +460,31 @@ void EAPMAX::solve_linear_equations(int i, int tao, boost::numeric::ublas::matri
 	//////////////////////////
 	axpy_prod(A_inverse, L, X);
 	//print X
-	std::cout << "X:\n" << X << '\n';
+	//* std::cout << "X:\n" << X << '\n';
 	X_(0, 0) = X(0, 0);
 	for (int J = 1; J < dim; J++)
 	{
-		int o = relabelled_index[i][J + tao - 1];
+		int o = relabelled_index[t][J + tao - 1];
 		X_(o + 1, 0) = X(J, 0);
 	}
 	//print X
 	std::cout << "X_:\n" << X_ << '\n';
 
-	std::cout << "x*ETC:\n";
-	for (int J = 1; J < m + 1; J++)
-		std::cout << X_(J, 0) * ETC[i][J - 1] << '\t';
-	std::cout << '\n';
+	//* std::cout << "x*ETC:\n";
+	//* for (int J = 1; J < m + 1; J++)
+	//* 	std::cout << X_(J, 0) * ETC[t][J - 1] << '\t';
+	//* std::cout << '\n';
 
-	std::cout << "x*ETC + L_[i-1]:\n";
-	for (int J = 1; J < m + 1; J++)
-		std::cout << X_(J, 0) * ETC[i][J - 1] + L_i[ii - 1][J - 1 ] << '\t';
-	std::cout << '\n';
+	//* std::cout << "x*ETC + L_[i-1]:\n";
+	//* for (int J = 1; J < m + 1; J++)
+	//* 	std::cout << X_(J, 0) * ETC[t][J - 1] + L_i[ii - 1][J - 1 ] << '\t';
+	//* std::cout << '\n';
 }
 
 double EAPMAX::caculate_objective_value(boost::numeric::ublas::matrix<double>& X, int i)
 {
 	// X 是原序索引
+	int t = users[i].get_type();
 	int ii = i + 1;
 	double p = 0;
 	for (int I = 0; I < i + 1; I++)
@@ -474,10 +495,10 @@ double EAPMAX::caculate_objective_value(boost::numeric::ublas::matrix<double>& X
 	double xAPCETC = 0;
 	for (int j = 0; j < m; j++)
 	{
-		int o = relabelled_index[i][j];
+		int o = relabelled_index[t][j];
 		if (X(o + 1, 0) >= 0)
 		{
-			xAPCETC += X(o + 1, 0) * ETCAPC[i][j];
+			xAPCETC += X(o + 1, 0) * ETCAPC[t][j];
 		}
 		else
 		{
@@ -485,7 +506,7 @@ double EAPMAX::caculate_objective_value(boost::numeric::ublas::matrix<double>& X
 			break;
 		}
 	}
-	double MSi = X(0, 0);
+	double MSi = X(0, 0) < MS_i[ii - 1] ? MS_i[ii - 1] : X(0, 0);
 	std::cout << "XXXXXXXXXXXXXX parameter XXXXXXXXXXXXXXXX\n";
 	std::cout << "profit = " << p << "\tE_[i-1] = " << E_i[ii - 1] << "\txAPCETC = " << xAPCETC << "\tMSi = " << MSi << '\n';
 	std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
@@ -497,7 +518,7 @@ double EAPMAX::caculate_objective_value(boost::numeric::ublas::matrix<double>& X
 void EAPMAX::print_input_data()
 {
 	std::cout << "m = " << m << ", n = " << n << "\n";
-	print_a();
+	print_users();
 	print_ETC_all();
 	print_APC();
 	std::cout << "profit = " << users[0].get_profit() << '\n';
@@ -506,10 +527,10 @@ void EAPMAX::print_input_data()
 void EAPMAX::print_ETC_all()
 {
 	std::cout << "Estimated time to compute (ETC):\n";
-	for (int i = 0; i < n; i++)
+	for (int t = 0; t < type_n; t++)
 	{
 		for (int j = 0; j < m; j++)
-			std::cout << ETC[i][j] << '\t';
+			std::cout << ETC[t][j] << '\t';
 		std::cout << '\n';
 	}
 	std::cout << '\n';
@@ -517,39 +538,40 @@ void EAPMAX::print_ETC_all()
 
 void EAPMAX::print_ETC_row(int i)
 {
-	std::cout << "ETC" << i << " : ";
+	int t = users[i].get_type();
+	std::cout << "ETC" << t << " : ";
 	for (int j = 0; j < m; j++)
-		std::cout << ETC[i][j] << '\t';
+		std::cout << ETC[t][j] << '\t';
 	std::cout << '\n';
 }
 
 void EAPMAX::print_APC()
 {
 	std::cout << "Average power consumption (APC):\n";
-	for (int i = 0; i < n; i++)
+	for (int t = 0; t < type_n; t++)
 	{
 		for (int j = 0; j < m; j++)
-			std::cout << APC[i][j] << '\t';
+			std::cout << APC[t][j] << '\t';
 		std::cout << '\n';
 	}
 	std::cout << '\n';
 }
 
-void EAPMAX::print_a()
+void EAPMAX::print_users()
 {
-	std::cout << "the tasks number of each user: ";
+	std::cout << "users:\n ";
 	for (int i = 0; i < n; i++)
-		std::cout << users[i].get_a() << ' ';
+		std::cout <<users[i].get_index() << '\t' << users[i].get_a() << '\t' << users[i].get_type() << '\n';
 	std::cout << '\n';
 }
 
 void EAPMAX::print_ETCAPC_all()
 {
 	std::cout << "ETC * APC:\n";
-	for (int i = 0; i < n; i++)
+	for (int t = 0; t < type_n; t++)
 	{
 		for (int j = 0; j < m; j++)
-			std::cout << ETCAPC[i][j] << '\t';
+			std::cout << ETCAPC[t][j] << '\t';
 		std::cout << '\n';
 	}
 	std::cout << '\n';
@@ -557,19 +579,20 @@ void EAPMAX::print_ETCAPC_all()
 
 void EAPMAX::print_ETCAPC_row(int i)
 {
-	std::cout << "ETCAPC" << i << " : ";
+	int t = users[i].get_type();
+	std::cout << "ETCAPC" << t << " : ";
 	for (int j = 0; j < m; j++)
-		std::cout << ETCAPC[i][j] << '\t';
+		std::cout << ETCAPC[t][j] << '\t';
 	std::cout << '\n';
 }
 
 void EAPMAX::print_relabelled_index_all()
 {
 	std::cout << "Relabelled index:\n";
-	for (int i = 0; i < n; i++)
+	for (int t = 0; t < type_n; t++)
 	{
 		for (int j = 0; j < m; j++)
-			std::cout << relabelled_index[i][j] << '\t';
+			std::cout << relabelled_index[t][j] << '\t';
 		std::cout << '\n';
 	}
 	std::cout << '\n';
@@ -577,9 +600,10 @@ void EAPMAX::print_relabelled_index_all()
 
 void EAPMAX::print_relabelled_index_row(int i)
 {
-	std::cout << "index_" << i << " : ";
+	int t = users[i].get_type();
+	std::cout << "index_" << t << " : ";
 	for (int j = 0; j < m; j++)
-		std::cout << relabelled_index[i][j] << '\t';
+		std::cout << relabelled_index[t][j] << '\t';
 	std::cout << '\n';
 }
 
@@ -676,6 +700,7 @@ void EAPMAX::print_MS_i()
 
 void EAPMAX::print_status(int i)
 {
+	int t = users[i].get_type();
 	std::cout << "\n########################### system status after assign user " << i << " ###########################\n";
 	// x
 	std::cout << "x:\n";
@@ -689,10 +714,11 @@ void EAPMAX::print_status(int i)
 	std::cout << "x * ETC:\n";
 	for (int I = 0; I < i + 1; I++)
 	{
+		t = users[I].get_type();
 		for (int j = 0; j < m; j++)
 		{
-			std::cout << x[I][j] * ETC[I][j];
-			if (x[I][j] * ETC[I][j] < 1000)
+			std::cout << x[I][j] * ETC[t][j];
+			if (x[I][j] * ETC[t][j] < 1000)
 				std::cout << "\t\t";
 			else
 				std::cout << '\t';

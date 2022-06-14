@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="definition_of_model.h" />
     <ClInclude Include="matrix_inverse.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\data\profit1\.DS_Store" />
@@ -159,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\data\profit1\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EMPM_algorithm.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
