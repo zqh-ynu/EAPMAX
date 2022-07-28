@@ -1,0 +1,71 @@
+	string case_path = produce_data_root + "case2_variable_n\\";
+	string a = "";
+	int ist_num = 50;
+	int N[5] = { 30, 100, 500, 1000, 2000 };
+	double gamma[3] = { 1.2, 1.3, 1.5 };
+	string sgamma[3] = { "1.2", "1.3", "1.5" };
+
+	for (int g = 0; g < 3; g++) {
+		std::cout << "\n------------------------------------------gamma = " << gamma[g] << " ------------------------------------------\n";
+		vector<Result> Online;
+		vector<Result> Greedy;
+		vector<Result> Average;
+		Online.resize(5);
+		Greedy.resize(5);
+		Average.resize(5);
+
+		for (int i = 0; i < 5; i++) {
+			std::cout << "\n-------------------------------------n = " << N[i] << " -------------------------------------\n";
+			string case_n_path = case_path + "n" + to_string(N[i]) + "\\";
+			for (int j = 0; j < ist_num; j++) {
+				string ist_file = case_n_path + "ist" + to_string(j) + ".txt";
+				std::cout << "ist_file : " << ist_file << '\n';
+				EAPMAX eapmax = EAPMAX(produce_data_root + "profit1//", ist_file);
+				//eapmax.print_input_data();
+				//eapmax.print_ETCAPC_all();
+
+				eapmax.set_gamma(gamma[g]);
+				eapmax.set_profit();
+				//eapmax.print_profit();
+
+				Result online_temp;
+				Result greedy_temp;
+				Result average_temp;
+				eapmax.Online_algorithm_for_EAPMAX(online_temp);
+				Online[i].add_result(online_temp);
+				/*vector<vector<double>>& x = Online[i].get_x();
+				std::cout << "\nn = " << x.size() << "\tm = " << x[0].size() << '\n';*/
+
+				eapmax.Greedy_based_method2(greedy_temp);
+				Greedy[i].add_result(greedy_temp);
+				//x = Greedy[i].get_x();
+
+				eapmax.Average_based_method(average_temp);
+				Average[i].add_result(average_temp);
+				std::cout << "....................................istance " << j << " ....................................\n";
+				std::cout << "online = " << online_temp.get_objective_value() << " greedy = " << greedy_temp.get_objective_value() << " average = " << average_temp.get_objective_value() << "\n";
+
+			}
+
+			Online[i].average(ist_num);
+			Greedy[i].average(ist_num);
+			Average[i].average(ist_num);
+		}
+
+		std::cout << "Online: \n";
+		for (int i = 0; i < 5; i++)
+		{
+			Online[i].print_all();
+		}
+		std::cout << "Greedy: \n";
+		for (int i = 0; i < 5; i++)
+		{
+			Greedy[i].print_all();
+		}
+		std::cout << "Average: \n";
+		for (int i = 0; i < 5; i++)
+		{
+			Average[i].print_all();
+		}
+		print_to_csv(result_path + "case2_varaible_n\\" + "gamma" + sgamma[g] + "\\", Online, Greedy, Average);
+	}
