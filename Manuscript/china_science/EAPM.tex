@@ -6,6 +6,10 @@
 \documentclass[utf-8]{SCIS2022cn}
 \standardtilde \let\standardtilde=\relax
 \usepackage{CJK}
+<<<<<<< HEAD
+=======
+\usepackage{subfigure}
+>>>>>>> 7a134bf3f8c1068b2907958307a41b2612461394
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% 作者附加的定义
 %%% 常用环境已经加载好, 不需要重复加载
@@ -279,6 +283,7 @@ x_{i1}=\cdots=x_{i(\tau-1)}=0,
 
 
 从图\ref{fig_exm2_obj}中我们能够明显观察到，当用户数较小时Online方法得到的目标值更大，当用户数不断增加，Online方法与Greedy方法得到的目标值几乎变得相等。这是由于当用户数$n$变得足够大时，总的任务数理所应当的也会增加，这会使得两种方法给出的调度方案产生的最大完工时间逐渐靠近最优调度所产生的最大完工时间。
+<<<<<<< HEAD
 \begin{figure}[!t]
 \centering
 \begin{minipage}[c]{0.3\textwidth}
@@ -319,6 +324,45 @@ x_{i1}=\cdots=x_{i(\tau-1)}=0,
 \cnenfigcaption{三种方法的执行时间随着$n$增长的变化}{Execution time of three methods with varying n.}
 \label{fig_exm2_time}
 \end{figure}
+=======
+\begin{figure*}[!t]
+\centering
+\subfigure[$\gamma = 1.2$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case2/gamma1.2/obj_value.pdf}
+}
+\subfigure[$\gamma = 1.3$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case2/gamma1.3/obj_value.pdf}
+}
+\subfigure[$\gamma = 1.5$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case2/gamma1.5/obj_value.pdf}
+}
+
+\cnenfigcaption{三种方法的目标值随着$n$增长的变化}{Objective values of two methods with varying n.}
+\label{fig_exm2_obj}
+\end{figure*}
+
+很明显，解所有用户对应的方程组(\ref{Equations})的时间复杂度与机器类型数$m$与用户数$n$有关。同样的，另外两种方法的时间复杂度也与二者有关。为了评估三种在线算法的时间性能，我们在同样的实验条件下进行了比较。
+\begin{figure*}[!t]
+\centering
+\subfigure[$\gamma = 1.2$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case2/gamma1.2/time.pdf}
+}
+\subfigure[$\gamma = 1.3$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case2/gamma1.3/time.pdf}
+}
+\subfigure[$\gamma = 1.5$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case2/gamma1.5/time.pdf}
+}
+\cnenfigcaption{三种方法的执行时间随着$n$增长的变化}{Execution time of three methods with varying n.}
+\label{fig_exm2_time}
+\end{figure*}
+>>>>>>> 7a134bf3f8c1068b2907958307a41b2612461394
 
 
 在图\ref{fig_exm2_time}中我们可以看出三种方法的执行时间都在随着用户数的增加而增加。虽然Online方法的执行时间最长，但它得到的目标值也是最大的。并且Online方法执行时间的增长是线性的，即使在$n=2000$时其执行时间也是毫秒级的。
@@ -327,6 +371,7 @@ x_{i1}=\cdots=x_{i(\tau-1)}=0,
 在实际场景中，用户到达后所提交的任务数可能很大，也可能很小，这是无法预知的。为了评估用户到达顺序对系统的影响，我们进行了本实验。我们设置了用户数$n=30$，他们的类型是随机的。如果用户$i$提交的任务包中的任务数$a_i > 500$，我们定义该用户提交的任务包为大任务包；若用户$i$提交的任务包中的任务数$a_i < 200$，我们定义该用户提交的任务包为小任务包。我们对比了四种到达顺序对应的目标值，“BaS”为前一半的用户提交大任务包，后一半用户提交小任务包；“SaB”为前一半的用户提交小任务包，后一半用户提交大任务包；“Rand”为提交大任务包与小任务包的用户到达是随机的；“Equal”为所有用户提交的任务包任务数相同，为400。
 \begin{figure}[!t]
 \centering
+<<<<<<< HEAD
 \begin{minipage}[c]{0.3\textwidth}
 \centering
 \includegraphics[width=2.2in]{./pic/case3/gamma1.2/obj_value.pdf}
@@ -341,15 +386,35 @@ x_{i1}=\cdots=x_{i(\tau-1)}=0,
 \centering
 \includegraphics[width=2.2in]{./pic/case3/gamma1.5/obj_value.pdf}
 \end{minipage}
+=======
+\subfigure[$\gamma = 1.2$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case3/gamma1.2/obj_value.pdf}
+}
+\subfigure[$\gamma = 1.3$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case3/gamma1.3/obj_value.pdf}
+}
+\subfigure[$\gamma = 1.5$]{
+\centering
+\includegraphics[width=1.9in]{./pic/case3/gamma1.5/obj_value.pdf}
+}
+>>>>>>> 7a134bf3f8c1068b2907958307a41b2612461394
 \cnenfigcaption{不同用户到达顺序对目标值的影响}{The impact of different user arrival sequences on the objective value.}
 \label{fig_exm3_obj}
 \end{figure}
 
 从图\ref{fig_exm3_obj}我们可以看到，在所有情况下Online方法都能得到最好的目标值结果。此外，我们观察到用户到达的顺序并未对目标值造成明显的影响，只有当SaB情形时Online方法与Greedy得到的目标值会稍微降低。这是由于，先将小任务包分配之后，为了不引起最大完工时间的快速增长，大包任务到达时有较小可能被分配给成本更大的机器进行执行。同时，我们也能很明显观察到，当$\gamma=1.5$时，Online方法得到的目标值更具优势。
 \section{总结与未来工作}
+<<<<<<< HEAD
 在本文中，我们提出了一种名为Online方法，其执行时间依赖于用户数以及机器种类数。我们通过新颖的方法构造线性方程组得到最终的分配结果，并在最终通过实验说明了此方法能在很多情况下得到令人满意的结果。
 
 值得一提的是，本文并未给出Online方法的近似比，这是将来值得进一步分析的研究内容。此外，基于机器学习的在线算法也是当下十分流行的方法。
+=======
+在本文中，我们通过考虑所有机器的完工时间，建立了一个精确的EAPM问题模型。并以单位时间利润最大化为目标，提出了一种在线算法。 该在线算法在用户到达时，根据系统当前状态构造多个线性方程组。该用户的调度方案，就是从这些线性方程组中产生。对于单个用户来说，这个在线算法的时间复杂度为$O(m^4)$，即只与机器种类数有关。通常机器种类数是一个常数。在最后的仿真实验中说明了此方法能在很多情况下得到令人满意的结果。
+
+值得一提的是，本文并未给出Online方法的竞争比，这是将来值得进一步分析的研究内容。此外，基于机器学习的在线算法也是当下十分流行的方法。
+>>>>>>> 7a134bf3f8c1068b2907958307a41b2612461394
 
 \begin{thebibliography}{99}
 \bibitem{Friese12} R. Friese, T. Brinks, C. Oliver, H. J. Siegel, and A. A.

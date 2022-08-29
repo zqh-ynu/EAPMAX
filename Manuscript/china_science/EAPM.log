@@ -1,0 +1,1197 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2022.7.2)  20 JUL 2022 13:14
+entering extended mode
+**EAPM.tex
+
+("D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Manuscript\ch
+ina_science\EAPM.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+
+("D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Manuscript\ch
+ina_science\SCIS2022cn.cls"
+
+LaTeX Warning: You have requested document class `SCIS2022cn',
+               but the document class provides `SCIS'.
+
+Document Class: SCIS 2021/10/22, 2.13
+(C:\CTEX\CTeX\tex\latex\cct\cctart.cls
+Document Class: cctart 2004/10/14 Derived from the `article' class
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\CTEX\CTeX\tex\latex\cct\cctbase.sty
+Package: cctbase 2006/05/17
+ (C:\CTEX\CTeX\tex\latex\cct\CCT.sty
+0.61803 [2009/11/20] (C:\CTEX\CTeX\tex\latex\cct\cchead.sty
+\!ZihaoNo=\count87
+\ccwd=\dimen103
+\ccht=\dimen104
+\ccdp=\dimen105
+\!ccbox=\box26
+\!ccbdskip=\skip43
+)
+Package: CCT 2009/11/20 0.61803
+\@CCTcnta=\count88
+\@CCTcntb=\count89
+\@CCTlastkern=\count90
+\@CCTglue=\skip44
+\@CCTtoks=\toks14
+
+(C:\CTEX\CTeX\tex\latex\cct\CCT.cfg) (C:\CTEX\CTeX\tex\latex\cct\GBKkern.cfg)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd) (\ziti{A}->gbksong)
+\@CCTskip=\skip45
+)))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen106
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks16
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks17
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks18
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks25
+)
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(C:\CTEX\MiKTeX\tex\latex\was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count103
+\mult@box=\box29
+\multicol@leftmargin=\dimen115
+\c@unbalance=\count104
+\c@collectmore=\count105
+\doublecol@number=\count106
+\multicoltolerance=\count107
+\multicolpretolerance=\count108
+\full@width=\dimen116
+\page@free=\dimen117
+\premulticols=\dimen118
+\postmulticols=\dimen119
+\multicolsep=\skip52
+\multicolbaselineskip=\skip53
+\partial@page=\box30
+\last@line=\box31
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count109
+\c@finalcolumnbadness=\count110
+\last@try=\dimen120
+\multicolovershoot=\dimen121
+\multicolundershoot=\dimen122
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\multicol@sort@counter=\count111
+)
+(C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup10
+)
+(C:\CTEX\MiKTeX\tex\latex\psnfss\pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amscd.sty
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks26
+\minaw@=\dimen123
+\bigaw@=\dimen124
+\minCDarrowwidth=\dimen125
+)
+(C:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(C:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count112
+\Gm@cntv=\count113
+\c@Gm@tempcnt=\count114
+\Gm@bindingoffset=\dimen126
+\Gm@wd@mp=\dimen127
+\Gm@odd@mp=\dimen128
+\Gm@even@mp=\dimen129
+\Gm@layoutwidth=\dimen130
+\Gm@layoutheight=\dimen131
+\Gm@layouthoffset=\dimen132
+\Gm@layoutvoffset=\dimen133
+\Gm@dimlist=\toks28
+
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(C:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count115
+))
+(C:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
+)
+(C:\CTEX\MiKTeX\tex\latex\picins\picins.sty
+Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
+\@BILD=\box55
+\@TEXT=\box56
+\d@breite=\dimen136
+\d@hoehe=\dimen137
+\d@xoff=\dimen138
+\d@yoff=\dimen139
+\d@shad=\dimen140
+\d@dash=\dimen141
+\d@boxl=\dimen142
+\d@pichskip=\dimen143
+\d@tmp=\dimen144
+\d@tmpa=\dimen145
+\d@bskip=\dimen146
+\hsiz@=\dimen147
+\p@getot@l=\dimen148
+\c@breite=\count116
+\c@hoehe=\count117
+\c@xoff=\count118
+\c@yoff=\count119
+\c@pos=\count120
+\c@shad=\count121
+\c@dash=\count122
+\c@boxl=\count123
+\c@zeilen=\count124
+\@changemode=\count125
+\c@piccaption=\count126
+\c@piccaptionpos=\count127
+\c@picpos=\count128
+\c@whole=\count129
+\c@half=\count130
+\c@tmp=\count131
+\c@tmpa=\count132
+\c@tmpb=\count133
+\c@tmpc=\count134
+\c@tmpd=\count135
+\d@leftskip=\skip63
+\ptoti=\dimen149
+\ptotii=\dimen150
+\env@box=\box57
+\d@envdp=\dimen151
+\c@hsize=\count136
+\c@envdp=\count137
+\d@envb=\dimen152
+)
+(C:\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count138
+\float@exts=\toks29
+\float@box=\box58
+\@float@everytoks=\toks30
+\@floatcapt=\box59
+)
+(C:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks31
+\c@algorithm=\count139
+)
+(C:\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count140
+\c@ALC@line=\count141
+\c@ALC@rem=\count142
+\c@ALC@depth=\count143
+\ALC@tlm=\skip64
+\algorithmicindent=\skip65
+)
+(C:\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen153
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\tools\array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen154
+\extrarowheight=\dimen155
+\NC@list=\toks32
+\extratabsurround=\skip66
+\backup@length=\skip67
+)
+\TX@col@width=\dimen156
+\TX@old@table=\dimen157
+\TX@old@col=\dimen158
+\TX@target=\dimen159
+\TX@delta=\dimen160
+\TX@cols=\count144
+\TX@ftn=\toks33
+)
+(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(C:\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen161
+\lightrulewidth=\dimen162
+\cmidrulewidth=\dimen163
+\belowrulesep=\dimen164
+\belowbottomsep=\dimen165
+\aboverulesep=\dimen166
+\abovetopsep=\dimen167
+\cmidrulesep=\dimen168
+\cmidrulekern=\dimen169
+\defaultaddspace=\dimen170
+\@cmidla=\count145
+\@cmidlb=\count146
+\@aboverulesep=\dimen171
+\@belowrulesep=\dimen172
+\@thisruleclass=\count147
+\@lastruleclass=\count148
+\@thisrulewidth=\dimen173
+)
+(C:\CTEX\MiKTeX\tex\latex\lastpage\lastpage.sty
+Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
+)
+(C:\CTEX\MiKTeX\tex\latex\supertabular\supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count149
+\ST@wd=\dimen174
+\ST@rightskip=\skip68
+\ST@leftskip=\skip69
+\ST@parfillskip=\skip70
+\ST@pageleft=\dimen175
+\ST@headht=\dimen176
+\ST@tailht=\dimen177
+\ST@pagesofar=\dimen178
+\ST@pboxht=\dimen179
+\ST@lineht=\dimen180
+\ST@stretchht=\dimen181
+\ST@prevht=\dimen182
+\ST@toadd=\dimen183
+\ST@dimen=\dimen184
+\ST@pbox=\box60
+)
+(C:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen185
+\Hy@linkcounter=\count150
+\Hy@pagecounter=\count151
+
+(C:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count152
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 3925.
+Package hyperref Info: Option `breaklinks' set `true' on input line 3925.
+Package hyperref Info: Option `hyperindex' set `true' on input line 3925.
+Package hyperref Info: Option `CJKbookmarks' set `true' on input line 3925.
+Package hyperref Info: Hyper figures OFF on input line 4046.
+Package hyperref Info: Link nesting OFF on input line 4051.
+Package hyperref Info: Hyper index ON on input line 4054.
+Package hyperref Info: Plain pages OFF on input line 4061.
+Package hyperref Info: Backreferencing OFF on input line 4066.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4284.
+\c@Hy@tempcnt=\count153
+LaTeX Info: Redefining \url on input line 4637.
+\Fld@menulength=\count154
+\Field@Width=\dimen186
+\Fld@charsize=\dimen187
+Package hyperref Info: Hyper figures OFF on input line 5757.
+Package hyperref Info: Link nesting OFF on input line 5762.
+Package hyperref Info: Hyper index ON on input line 5765.
+Package hyperref Info: backreferencing OFF on input line 5772.
+Package hyperref Info: Link coloring ON on input line 5775.
+Package hyperref Info: Link coloring with OCG OFF on input line 5782.
+Package hyperref Info: PDF/A mode OFF on input line 5787.
+LaTeX Info: Redefining \ref on input line 5827.
+LaTeX Info: Redefining \pageref on input line 5831.
+\Hy@abspage=\count155
+\c@Item=\count156
+\c@Hfootnote=\count157
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(C:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
+File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
+\Fld@listcount=\count158
+\c@bookmark@seq@number=\count159
+
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip71
+)
+(C:\CTEX\MiKTeX\tex\latex\breakurl\breakurl.sty
+Package: breakurl 2009/01/24 v1.30 Breakable hyperref URLs
+
+(C:\CTEX\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(C:\CTEX\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+\XKV@depth=\count160
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 47.
+
+) (C:\CTEX\MiKTeX\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box61
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen188
+\ttl@minus=\dimen189
+\ttl@toksa=\toks36
+\titlewidth=\dimen190
+\titlewidthlast=\dimen191
+\titlewidthfirst=\dimen192
+)
+(C:\CTEX\MiKTeX\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+(C:\CTEX\MiKTeX\tex\latex\caption\caption.sty
+Package: caption 2011/11/10 v3.2e Customizing captions (AR)
+
+(C:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
+Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
+\captionmargin=\dimen193
+\captionmargin@=\dimen194
+\captionwidth=\dimen195
+\caption@indent=\dimen196
+\caption@parindent=\dimen197
+\caption@hangindent=\dimen198
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {#1~~#2}\ifdim \wd \@tempboxa >\hsize #1~~#2\par \else \glob
+al \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }\fi \vskip \bel
+owcaptionskip .
+\c@ContinuedFloat=\count161
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: picins package is loaded.
+Package caption Info: supertabular package is loaded.
+)
+\c@definition=\count162
+\c@theorem=\count163
+\c@lemma=\count164
+\c@corollary=\count165
+\c@axiom=\count166
+\c@propsition=\count167
+\c@example=\count168
+\c@exercise=\count169
+\c@solution=\count170
+\c@notation=\count171
+\c@assumption=\count172
+\c@remark=\count173
+\c@property=\count174
+) (C:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
+Package: CJK 2008/12/29 4.8.2
+
+(C:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+Package: MULEenc 2008/12/29 4.8.2
+)
+(C:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
+File: CJK.enc 2008/12/29 4.8.2
+)
+LaTeX Info: Redefining \selectfont on input line 756.
+\CJK@indent=\box62
+)
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip74
+\subfigcapskip=\skip75
+\subfigcaptopadj=\dimen199
+\subfigbottomskip=\skip76
+\subfigcapmargin=\dimen200
+\subfiglabelskip=\skip77
+\c@subfigure=\count175
+\c@lofdepth=\count176
+\c@subtable=\count177
+\c@lotdepth=\count178
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip78
+\subfig@bottom=\skip79
+)
+
+LaTeX Warning: Unused global option(s):
+    [CJK].
+
+
+("D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Manuscript\ch
+ina_science\EAPM.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=796.67715pt
+* \textwidth=455.24408pt
+* \textheight=620.27007pt
+* \oddsidemargin=2.0pt
+* \evensidemargin=2.0pt
+* \topmargin=0.0pt
+* \headheight=12.0pt
+* \headsep=19.91692pt
+* \topskip=10.0pt
+* \footskip=28.45274pt
+* \marginparwidth=111.0pt
+* \marginparsep=11.0pt
+* \columnsep=19.91684pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen201
+\scratchbox=\box63
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen202
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks38
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 18.
+\AtBeginShipoutBox=\box64
+Package hyperref Info: Link coloring ON on input line 18.
+ (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count185
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+
+("D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Manuscript\ch
+ina_science\EAPM.out")
+("D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Manuscript\ch
+ina_science\EAPM.out")
+\@outlinefile=\write3
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+ (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 68.
+
+(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 68.
+
+(C:\CTEX\MiKTeX\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19hei.fd) (\ziti{B}->gbkhei)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19kai.fd) (\ziti{C}->gbkkai)
+Loading punctuation table gbksong.tbl
+Overfull \hbox (5.74042pt too wide) in paragraph at lines 68--68
+ []
+ []
+
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd) (\ziti{D}->gbkfs)
+Loading punctuation table gbkfs.tbl [1
+
+{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[2]
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/example.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<./pic/example.pdf, id=211, 426.8748pt x 284.62335pt>
+File: ./pic/example.pdf Graphic file (type pdf)
+ <use ./pic/example.pdf>
+Package pdftex.def Info: ./pic/example.pdf used on input line 110.
+(pdftex.def)             Requested size: 231.26378pt x 154.20244pt.
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[3 <D:/Myschool/graduate_school/02Graduate/Research/My paper/EAPMAX/Manuscript/
+china_science/pic/example.pdf>]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 158.
+
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[4]
+Overfull \hbox (13.06252pt too wide) in paragraph at lines 182--184
+\gbksong49-10.5 
+ \gbksong54-10.5 4$[][] \OML/cmm/m/it/10 x[]APC[]ETC[]$\gbksong40-10.5  \gbkso
+ng64-10.5 Š \gbksong46-10.5 ¦ \gbksong47-10.5 Œ \gbksong51-10.5 U \gbksong60-10
+.5  \gbksong26-10.5 §| \gbksong54-10.5 e$\OML/cmm/m/it/10 APC[]ETC[]$\gbksong6
+4-10.5 Š \gbksong60-10.5  \gbksong51-10.5 @ \gbksong50-10.5 o \gbksong46-10.5 
+Ò \gbksong54-10.5 4 \gbksong52-10.5 Ù \gbksong40-10.5 é \gbksong62-10.5 A \gbks
+ong40-10.5 $\OML/cmm/m/it/10 x[]$\gbksong39-10.5 Œ \gbksong26-10.5 §| \gbksong
+54-10.5 e$\OML/cmm/m/it/10 APC[]ETC[]$\gbksong64-10.5 Š
+ []
+
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 192.
+
+
+Overfull \hbox (31.06415pt too wide) in paragraph at lines 192--194
+\gbksong43-10.5 é \gbksong54-10.5 N \gbksong61-10.5 ´ \gbksong64-10.5 y \gbkson
+g50-10.5 ²$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]; [] ; x[]\OT1/cmr/m/n/10 
+)$\gbksong55-10.5 ´ \gbksong43-10.5 5 \gbksong44-10.5 y\OT1/cmr/m/n/10 ([][]11[
+][])\gbksong40-10.5  \gbksong61-10.5 ˜ \gbksong42-10.5 ‡ \gbksong47-10.5 Œ \gb
+ksong60-10.5 1 \gbksong46-10.5 ) |\gbksong25-10.5 "| \gbksong62-10.5 d u\OT1/cm
+r/m/n/10 ([][]13[][])\gbksong64-10.5 ­ \gbksong51-10.5 ü \gbksong60-10.5 S \gbk
+song55-10.5 ¦ \gbksong40-10.5 $\OML/cmm/m/it/10 APC[]ETC[] \U/msa/m/n/10 > \OM
+L/cmm/m/it/10 APC[]ETC[]$\gbksong26-10.5 §|
+ []
+
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 210.
+
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[5]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 223.
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Overfull \hbox (238.64134pt too wide) in alignment at lines 274--274
+[] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 278.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 278.
+
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.2/obj_value.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case2/gamma1.2/obj_value.pdf, id=331, 270.2898pt x 213.4374pt>
+File: ./pic/case2/gamma1.2/obj_value.pdf Graphic file (type pdf)
+
+<use ./pic/case2/gamma1.2/obj_value.pdf>
+Package pdftex.def Info: ./pic/case2/gamma1.2/obj_value.pdf used on input line 
+288.
+(pdftex.def)             Requested size: 137.31255pt x 108.43149pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.3/obj_value.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case2/gamma1.3/obj_value.pdf, id=332, 270.2898pt x 213.4374pt>
+File: ./pic/case2/gamma1.3/obj_value.pdf Graphic file (type pdf)
+
+<use ./pic/case2/gamma1.3/obj_value.pdf>
+Package pdftex.def Info: ./pic/case2/gamma1.3/obj_value.pdf used on input line 
+292.
+(pdftex.def)             Requested size: 137.31255pt x 108.43149pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.5/obj_value.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case2/gamma1.5/obj_value.pdf, id=333, 270.2898pt x 213.4374pt>
+File: ./pic/case2/gamma1.5/obj_value.pdf Graphic file (type pdf)
+
+<use ./pic/case2/gamma1.5/obj_value.pdf>
+Package pdftex.def Info: ./pic/case2/gamma1.5/obj_value.pdf used on input line 
+296.
+(pdftex.def)             Requested size: 137.31255pt x 108.43149pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.2/time.pdf): PDF 
+inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case2/gamma1.2/time.pdf, id=335, 256.07669pt x 213.4374pt>
+File: ./pic/case2/gamma1.2/time.pdf Graphic file (type pdf)
+
+<use ./pic/case2/gamma1.2/time.pdf>
+Package pdftex.def Info: ./pic/case2/gamma1.2/time.pdf used on input line 308.
+(pdftex.def)             Requested size: 137.31255pt x 114.4533pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.3/time.pdf): PDF 
+inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case2/gamma1.3/time.pdf, id=336, 256.07669pt x 213.4374pt>
+File: ./pic/case2/gamma1.3/time.pdf Graphic file (type pdf)
+
+<use ./pic/case2/gamma1.3/time.pdf>
+Package pdftex.def Info: ./pic/case2/gamma1.3/time.pdf used on input line 312.
+(pdftex.def)             Requested size: 137.31255pt x 114.4533pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.5/time.pdf): PDF 
+inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case2/gamma1.5/time.pdf, id=337, 256.07669pt x 213.4374pt>
+File: ./pic/case2/gamma1.5/time.pdf Graphic file (type pdf)
+
+<use ./pic/case2/gamma1.5/time.pdf>
+Package pdftex.def Info: ./pic/case2/gamma1.5/time.pdf used on input line 316.
+(pdftex.def)             Requested size: 137.31255pt x 114.4533pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case3/gamma1.2/obj_value.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case3/gamma1.2/obj_value.pdf, id=339, 270.2898pt x 213.4374pt>
+File: ./pic/case3/gamma1.2/obj_value.pdf Graphic file (type pdf)
+
+<use ./pic/case3/gamma1.2/obj_value.pdf>
+Package pdftex.def Info: ./pic/case3/gamma1.2/obj_value.pdf used on input line 
+331.
+(pdftex.def)             Requested size: 137.31255pt x 108.43149pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case3/gamma1.3/obj_value.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case3/gamma1.3/obj_value.pdf, id=340, 270.2898pt x 213.4374pt>
+File: ./pic/case3/gamma1.3/obj_value.pdf Graphic file (type pdf)
+
+<use ./pic/case3/gamma1.3/obj_value.pdf>
+Package pdftex.def Info: ./pic/case3/gamma1.3/obj_value.pdf used on input line 
+335.
+(pdftex.def)             Requested size: 137.31255pt x 108.43149pt.
+
+
+pdfTeX warning: pdflatex.exe (file D:/Myschool/graduate_school/02Graduate/Resea
+rch/My paper/EAPMAX/Manuscript/china_science/pic/case3/gamma1.5/obj_value.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./pic/case3/gamma1.5/obj_value.pdf, id=341, 270.2898pt x 213.4374pt>
+File: ./pic/case3/gamma1.5/obj_value.pdf Graphic file (type pdf)
+
+<use ./pic/case3/gamma1.5/obj_value.pdf>
+Package pdftex.def Info: ./pic/case3/gamma1.5/obj_value.pdf used on input line 
+339.
+(pdftex.def)             Requested size: 137.31255pt x 108.43149pt.
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[8 <D:/Myschool/graduate_school/02Graduate/Research/My paper/EAPMAX/Manuscript/
+china_science/pic/case2/gamma1.2/obj_value.pdf> <D:/Myschool/graduate_school/02
+Graduate/Research/My paper/EAPMAX/Manuscript/china_science/pic/case2/gamma1.3/o
+bj_value.pdf> <D:/Myschool/graduate_school/02Graduate/Research/My paper/EAPMAX/
+Manuscript/china_science/pic/case2/gamma1.5/obj_value.pdf> <D:/Myschool/graduat
+e_school/02Graduate/Research/My paper/EAPMAX/Manuscript/china_science/pic/case2
+/gamma1.2/time.pdf> <D:/Myschool/graduate_school/02Graduate/Research/My paper/E
+APMAX/Manuscript/china_science/pic/case2/gamma1.3/time.pdf> <D:/Myschool/gradua
+te_school/02Graduate/Research/My paper/EAPMAX/Manuscript/china_science/pic/case
+2/gamma1.5/time.pdf>]
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[9 <D:/Myschool/graduate_school/02Graduate/Research/My paper/EAPMAX/Manuscript/
+china_science/pic/case3/gamma1.2/obj_value.pdf> <D:/Myschool/graduate_school/02
+Graduate/Research/My paper/EAPMAX/Manuscript/china_science/pic/case3/gamma1.3/o
+bj_value.pdf> <D:/Myschool/graduate_school/02Graduate/Research/My paper/EAPMAX/
+Manuscript/china_science/pic/case3/gamma1.5/obj_value.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 472--474
+[]\OT1/cmr/m/n/8 (2013, May) In-tel core i7 3770k pow-er con-sump-tion, ther-ma
+l. [On-line]. Avail-able:
+ []
+
+
+AED: lastpage setting LastPage
+
+Overfull \vbox (1.3402pt too high) has occurred while \output is active []
+
+
+[10]
+
+Package caption Warning: Unused \captionsetup[subfloat] on input line 534.
+See the caption package documentation for explanation.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
+
+("D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Manuscript\ch
+ina_science\EAPM.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
+Package rerunfilecheck Info: File `EAPM.out' has not changed.
+(rerunfilecheck)             Checksum: E3452BCD1407C2D8A5F12E5986233307;544.
+ ) 
+Here is how much of TeX's memory you used:
+ 11205 strings out of 495354
+ 153615 string characters out of 3183860
+ 296208 words of memory out of 3000000
+ 13904 multiletter control sequences out of 15000+200000
+ 91559 words of font info for 322 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 60i,15n,94p,1055b,805s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf>
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/sim
+hei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/F
+onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/CTEX/CTeX/fonts/truetype/chine
+se/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese
+/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/s
+imkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
+/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
+/WINDOWS/Fonts/simkai.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/C
+TEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese
+/simsun.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDO
+WS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/CTEX/CTeX/fonts/truetype/c
+hinese/simsun.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
+/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chine
+se/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fon
+ts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
+<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C
+:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/sim
+fang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOW
+S/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf
+><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/
+simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WIN
+DOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.
+ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fon
+ts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/
+WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfa
+ng.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/
+Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><
+C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/si
+mfang.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/t
+ruetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/
+CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chines
+e/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/font
+s/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><
+C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chi
+nese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/f
+onts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
+f><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
+chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTe
+X/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fo
+nts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WI
+NDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.tt
+f><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
+imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
+/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
+/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei
+.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Font
+s/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIND
+OWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf>
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/sim
+hei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CT
+EX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/
+simsun.ttf><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.
+pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cmextra/cmex7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/CTE
+X/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/CTE
+X/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/symbols/msam7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on EAPM.pdf (10 pages, 1342098 bytes).
+PDF statistics:
+ 1056 PDF objects out of 1200 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+

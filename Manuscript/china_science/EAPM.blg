@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: EAPM.aux
@@ -44,4 +45,9 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 0
+=======
+This is BibTeX, Version 0.99dThe top-level auxiliary file: EAPM.aux
+I found no \bibdata command---while reading file EAPM.aux
+I found no \bibstyle command---while reading file EAPM.aux
+>>>>>>> 7a134bf3f8c1068b2907958307a41b2612461394
 (There were 2 error messages)
