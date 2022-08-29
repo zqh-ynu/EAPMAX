@@ -1,0 +1,125 @@
+\bibitem{Friese12} R. Friese, T. Brinks, C. Oliver, H. J. Siegel, and A. A.
+Maciejewski, ``Analyzing the trade-offs between minimizing makespan
+and minimizing energy consumption in a heterogeneous resource
+allocation problem, '' in {\it  The Second International Conference
+on Advanced Communications and Computation}, pp. 81-89, 2012.
+
+\bibitem{Friese13} R. Friese, B. Khemka, A.A. Maciejewski, H.J. Siegel, G.A.
+Koenig, S. Powers, M. Hilton, J. Rambharos, G. Okonski, and S. W.
+Poole, ``An analysis framework for investigating the trade-offs
+between system performance and energy consumption in a heterogeneous
+computing environment'', in {\it IEEE 27th International Parallel
+and Distributed Processing Symposium Workshops}, pp. 19-30,  2013.
+
+\bibitem{Friese13b} R. Friese, T. Brinks, C. Oliver, H.J. Siegel, A.A. Maciejewski,
+and S. Pasricha, ``A machine-by-machine analysis of a bi-objective
+resource allocation problem'', in {\it International Conference on
+Parallel and Distributed Processing Technologies and Applications},
+pp. 3-9, 2013.
+
+\bibitem{Tarplee14} K.M. Tarplee, A.A. Maciejewski, and H.J. Siegel,
+ ``Energy-aware profit maximizing scheduling algorithm for
+heterogeneous computing systems, '' in {\it 14th IEEE/ACM
+International Symposium on Cluster, Cloud and Grid Computing}, pp.
+595-603, 2014.
+
+ \bibitem{Tarplee151} K. M. Tarplee,  R. Friese, A. A. Maciejewski, and H. J. Siegel,
+``Scalable linear programming based resource allocation for makespan
+minimization in heterogeneous computing systems, '' {\it Journal of
+Parallel and Distributed Computing},  vol.  84, pp. 76-86, 2015.
+
+\bibitem{Tarplee152} K. M. Tarplee, R. Friese, A. A. Maciejewski, H. J. Siegel, and E.
+Chong,`` Energy and makespan tradeoffs in heterogeneous computing
+systems using efficient linear programming techniques, '' {\it IEEE
+Transactions on Parallel and Distributed Systems}, vol. 27, no. 6,
+pp. 1633-1646, 2016.
+
+ \bibitem{Oxley15} M.A.  Oxley, S. Pasricha,  A.A.  Maciejewski, H.J. Siegel, J. Apodaca,
+D. Young,  L. Briceno,  J. Smith, S. Bahirat, B. Khemka, A. Ramirez,
+and Y. Zou, `` Makespan and energy robust stochastic static resource
+allocation of bags-of-tasks to a heterogeneous computing system, ''
+{\it IEEE Transactions on Parallel and Distributed Systems},  vol.
+26, no. 10, pp.  2791-2805, 2015.
+
+\bibitem{Braun01} T. D. Braun, H. J. Siegel, N. Beck, L. L. Boloni, M. Maheswaran,
+A. I. Reuther, J. P. Robertson, M. D. Theys, B. Yao, D. Hensgen, and
+R. F. Freund, `` A comparison of eleven static heuristics for
+mapping a class of independent tasks onto heterogeneous distributed
+computing systems, '' {\it Journal of Parallel and Distributed
+Computing},  vol. 61, no. 6, pp. 810-837, 2001.
+
+\bibitem{Diaz14} C. O. Diaz, J. E. Pecero, and P. Bouvry, `` Scalable, low complexity, and
+fast greedy scheduling heuristics for highly heterogeneous
+distributed computing systems,'' {\it The Journal of
+Supercomputing},  vol.  67, no. 3,  pp. 837-853, 2014.
+
+\bibitem{Ebrahimirad} V. Ebrahimirad, M. Goudarzi, and A. Rajabi, `` Energy-aware scheduling for
+precedence-constrained parallel virtual machines in virtualized data
+centers, '' {\it Journal of Grid Computing}, vol.  13,  no.  2, pp.
+233-253, 2015.
+
+\bibitem{Tchana16}  A. Tchana,  N. D. Palma,  I. Safieddine, and D.
+Hagimont, ``Software consolidation as an efficient energy and cost
+saving solution,'' {\it  Future Generation Computer Systems},
+vol. 58, pp. 1-12, 2016.
+
+\bibitem{Hsu14} C. H. Hsu, K. D. Slagter, S. C. Chen, and Y. C. Chung, ``Optimizing energy consumption with task consolidation in
+clouds, '' {\it   Information Sciences}, vol. 258, no. 10, pp.
+ 452-462, 2014.
+
+\bibitem{Khemka15} B. Khemka,  R. Friese, S. Pasricha, A. A.
+Maciejewski, H. J. Siegel, G. A. Koenig, S.  Powers, M. Hilton, R.
+Rambharos, and S. Poole,  ``Utility maximizing dynamic resource
+management in an over subscribed energy-constrained heterogeneous
+computing system,'' {\it  Sustainable Computing: Informatics and
+Systems}, vol.  5, pp. 14-30, 2015.
+
+  \bibitem{Khemka152} B. Khemka, R. Friese, L. D. Briceno, H. J. Siegel, A. A.
+Maciejewski, G. A. Koenig, C. Groer, G. Okonski, M. M. Hilton, R.
+Rambharos, and S. Poole, `` Utility functions and resource
+management in an oversubscribed heterogeneous computing environment,
+'' {\it IEEE Transactions on Computers},  vol. 64,   no. 1, pp.
+2394-2407, 2015.
+
+\bibitem{Mashayekhy}  L. Mashayekhy, M.M. Nejad, D. Grosu, Q. Zhang, and W. Shi,
+`` Energy-aware scheduling of mapreduce jobs for big data
+applications, '' {\it
+ IEEE Transactions on  Parallel and Distributed Systems}, vol. 26, no. 10,
+pp. 2720-2733, 2015.
+
+\bibitem{Dayarathna} M. Dayarathna, Y. Wen, and R. Fa, `` Data center energy consumption modeling: a
+ survey, ''  {\it IEEE  Communications Surveys \& Tutorials},   vol. 18, no. 1, pp. 732-794 2016.
+
+\bibitem{huyikun} 胡逸騉.面向高性能计算的能耗感知任务调度算法及应用.2019.湖南大学,PhD dissertation.
+
+\bibitem{liweidong2015} W. Li, X. Liu, X. Zhang and X. Cai, ``A Task-Type-Based Algorithm for the Energy-Aware Profit Maximizing Scheduling Problem in Heterogeneous Computing Systems," {\it2015 15th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing}, pp. 1107-1110, 2015.
+
+\bibitem{liweidong2019} Weidong Li, Xi Liu, Xiaobo Cai and Xuejie Zhang, `` Approximation algorithm for the energy-aware profit maximizing problem in heterogeneous computing systems, " {\it Journal of Parallel and Distributed Computing}, vol. 124, pp. 70-77, 2019.
+
+\bibitem{zhangxiaolu}Zhang, X., Liu, X., Li, W., Zhang, X. (2019). ``Trade-off Between Energy Consumption and Makespan in the Mapreduce Resource Allocation Problem."  {\it2019 The 5th International Conference on Artificial Intelligence and Security}, Lecture Notes in Computer Science, vol. 11633, 2019.
+
+\bibitem{daibingfei} Bingfei Dai, Jianping Li, and Weidong Li. 2018. ``Semi-online Hierarchical Scheduling for Bag-of-tasks on Two Machines." {\it Proceedings of the 2018 2nd International Conference on Computer Science and Artificial Intelligence (CSAI '18)}, pp. 609–614, 2018.
+
+\bibitem{Hameed} A. Hameed, A. Khoshkbarforoushha, R. Ranjan, P.
+P.h Jayaraman, J. Kolodziej, P. Balaji, S. Zeadally, Q. M. Malluhi,
+N. Tziritas, A. Vishnu, S. U. Khan, and A. Zomaya, ``A survey and
+taxonomy on energy efficient resource allocation techniques for
+cloud computing systems,'' {\it Computing}, vol. 98, pp. 751-774,
+2016.
+
+\bibitem{Kaur15} T. Kaur, and I. Chana, ``Energy efficiency techniques in cloud computing: a survey and
+taxonomy, '' {\it ACM Computing Surveys},  vol. 48, no. 2, Article
+No. 22, 2015.
+
+\bibitem{Zhang18}J. Zhang, N. Xie, X. Zhang, W. Li, ``An online auction mechanism for cloud computing resource allocation
+ and pricing based on user evaluation and cost,'' {\it  Future Generation Computer Systems },
+vol. 89, pp. 286-299, 2018.
+
+\bibitem{Orgerie14} A.-C. Orgerie, M. D. de Assuncao, and L. Lefevre,  ``A survey on techniques
+ for improving the energy efficiency of large-scale distributed
+ systems, '' {\it ACM Computing Surveys},  vol. 46, no.  4, Article No. 47,  2014.
+
+\bibitem{Benchmark} (2013, May) Intel core i7 3770k power consumption, thermal.
+[Online]. Available: http://openbenchmarking.org/result/1204229-SU-CPUMONITO81
+
+\bibitem{7040511}Chunling Cheng , Jun Li and Ying Wang ``An energy-saving task scheduling strategy based on vacation queuing theory in cloud computing, " {\it Tsinghua Science and Technology}, vol. 20, pp. 28-39, 2015.

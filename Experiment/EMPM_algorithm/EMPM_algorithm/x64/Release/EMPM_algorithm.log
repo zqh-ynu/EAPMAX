@@ -1,0 +1,12 @@
+﻿  main.cpp
+D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Experiment\EMPM_algorithm\EMPM_algorithm\definition_of_model.h(154,37): warning C4227: 使用了记时错误: 忽略引用上的限定符
+D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Experiment\EMPM_algorithm\EMPM_algorithm\main.cpp(21,13): warning C4326: “main”的返回类型应为“int”而非“void”
+D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Experiment\EMPM_algorithm\EMPM_algorithm\main.cpp(65,25): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Experiment\EMPM_algorithm\EMPM_algorithm\main.cpp(91,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Experiment\EMPM_algorithm\EMPM_algorithm\main.cpp(92,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  0 of 1005 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  EMPM_algorithm.vcxproj -> D:\Myschool\graduate_school\02Graduate\Research\My paper\EAPMAX\Experiment\EMPM_algorithm\x64\Release\EMPM_algorithm.exe
